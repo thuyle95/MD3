@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 class CaculatorController extends Controller
 {
     public function caculator(Request $request)
@@ -15,6 +14,7 @@ class CaculatorController extends Controller
         $discountPrice = $price - $discountAmount;
         // $param=[
         //     "discountAmount" => $discountAmount
+         //    "discountPrice"  => $discountPrice
         // ];
         return view('show_discount_amount', compact('discountAmount','discountPrice'));
     }
