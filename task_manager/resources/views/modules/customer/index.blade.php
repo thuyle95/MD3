@@ -25,7 +25,8 @@
                 <td>01234567890</td>
                 <td>email.test@mail.com</td>
                 <td>
-                    <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a& </td>
+
+                    <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a> </td>
             </tr>
             <tr>
                 <td>2</td>

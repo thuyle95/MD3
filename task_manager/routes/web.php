@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,3 +49,13 @@ Route::prefix('customer')->group(function () {
     });
 });
 Route::get('customers', [CustomerController::class, 'index']);
+
+Route::prefix('tasks')->group(function () {
+    Route::get('/', [TaskController::class, 'index'])->name('tasks.index');
+    Route::get('create', [TaskController::class, 'create'])->name('tasks.create');
+    Route::post('store', [TaskController::class, 'store'])->name('tasks.store');
+    Route::get('{taskId}', [TaskController::class, 'show'])->name('tasks.show');
+    Route::get('{taskId}/edit', [TaskController::class, 'edit'])->name('tasks.edit');
+    Route::put('{taskId}', [TaskController::class, 'update'])->name('tasks.update');
+    Route::delete('{photo}', [TaskController::class, 'destroy'])->name('tasks.destroy');
+});
