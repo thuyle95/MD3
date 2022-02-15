@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
-
 // Tạo 1 nhóm route với tiền tố customer
 Route::prefix('customer')->group(function () {
     Route::get('index', function () {
@@ -59,3 +56,4 @@ Route::prefix('tasks')->group(function () {
     Route::put('{taskId}', [TaskController::class, 'update'])->name('tasks.update');
     Route::delete('{photo}', [TaskController::class, 'destroy'])->name('tasks.destroy');
 });
+

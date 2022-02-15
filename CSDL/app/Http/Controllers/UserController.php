@@ -31,7 +31,6 @@ class UserController extends Controller
         ->where('id', '=', '1')
         ->where('phones', '=', '0356609985')
         ->get();
-        ;
         dd($user);
     }
 

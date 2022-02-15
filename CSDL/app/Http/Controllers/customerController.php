@@ -33,11 +33,11 @@ class customerController extends Controller
         //     'phone' => '0356609985',
         //     'email' => 'thuyle2995@gmail.com'
         // ]);
-        $customers = new Customer;
-        $customers->name = 'Thuy Le';
-        $customers->phone = '0356609985';
-        $customers->email = '22445@gmail.com';
-        $customers->save();
+        // $customers = new Customer;
+        // $customers->name = 'Thuy Le';
+        // $customers->phone = '0356609985';
+        // $customers->email = '22445@gmail.com';
+        // $customers->save();
 
     }
 
