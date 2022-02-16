@@ -1,0 +1,24 @@
+.header{
+    background-color: blue;
+    width:500px;
+    text-align: center;
+    height:100px;
+    color:white;
+}
+#myInput{
+    width:350px;
+}
+.addBtn{
+    width:80px;
+}
+li {
+    list-style-type: none;
+}
+.content {
+    width:500px;
+}
+.close{
+    float:right;
+    font-size: 20px;
+    cursor: pointer;
+}
